@@ -60,21 +60,22 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-primary-foreground/60 text-xs uppercase tracking-[0.3em] mb-3 font-medium">We Are Travellers</p>
+            <p className="text-primary-foreground/60 text-xs uppercase tracking-[0.3em] mb-3 font-medium">Digital Transformation • AI Strategy • Product Engineering</p>
             <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground tracking-tight mb-4 max-w-3xl italic leading-[1.1]">
-              Van road trips around the world, we've got you covered
+              We build the future of business
             </h1>
-            <p className="text-primary-foreground/70 text-xs uppercase tracking-[0.2em] mb-6">Where do you want to go?</p>
+            <p className="text-primary-foreground/70 text-xs uppercase tracking-[0.2em] mb-6">Transform faster. Operate smarter. Grow better.</p>
             <div className="flex items-center max-w-sm bg-card/90 backdrop-blur rounded-md overflow-hidden focus-within:ring-2 focus-within:ring-primary">
               <input
                 type="text"
-                placeholder="Search..."
+                placeholder="Search services and insights..."
                 className="flex-1 bg-transparent pl-4 pr-2 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none text-sm"
               />
               <button className="flex items-center justify-center w-10 h-10 bg-primary text-primary-foreground rounded-md m-0.5 hover:bg-primary/90 transition-colors shrink-0">
                 <Search className="w-4 h-4" />
               </button>
             </div>
+
           </motion.div>
         </div>
 
