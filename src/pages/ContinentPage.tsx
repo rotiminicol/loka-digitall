@@ -19,7 +19,7 @@ const ContinentPage = () => {
 
   if (!continent) return <NotFound />;
 
-  const allArticles = continent.countries.flatMap((c) => c.insights);
+  const allArticles = continent.countries.flatMap((c) => c.articles);
 
   return (
     <Layout>
@@ -125,7 +125,7 @@ const ContinentPage = () => {
                   <span className="text-2xl">{countryFlags[country.name] || "◆"}</span>
                   <div>
                     <span className="font-display text-lg font-bold text-foreground">{country.name}</span>
-                    <span className="block text-[10px] text-muted-foreground">{country.insights.length} insights</span>
+                    <span className="block text-[10px] text-muted-foreground">{country.articles.length} insights</span>
                   </div>
                 </div>
                 <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition" />

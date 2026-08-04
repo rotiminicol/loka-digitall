@@ -77,7 +77,7 @@ const RouteDetailPage = () => {
       <section className="max-w-4xl mx-auto px-4 md:px-8 py-16">
         <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-10">Phase by Phase Itinerary</h2>
         <div className="space-y-0">
-          {route.engagement.map((item, i) => (
+          {route.itinerary.map((item, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 10 }}
