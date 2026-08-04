@@ -50,8 +50,9 @@ const Index = () => {
 
         {/* Stamp badge */}
         <div className="absolute top-8 right-8 md:top-12 md:right-16 stamp-badge text-primary-foreground border-primary-foreground/60 hidden md:flex">
-          <span>We Are<br/>Travellers<br/>Est. 2013</span>
+          <span>LOKA<br/>Digital<br/>Africa</span>
         </div>
+
 
         <div className="relative h-full flex flex-col justify-end pb-20 px-6 md:px-16 max-w-7xl mx-auto">
           <motion.div
