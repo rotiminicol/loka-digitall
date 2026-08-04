@@ -149,18 +149,18 @@ const Index = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Traveling solo together</p>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Featured product</p>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4 italic leading-snug">
-              Book your adventure trip this week and receive up to €250 discount
+              LOKA Logistics — smart mobility, smarter commerce
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-              Love adventure, making friends, but want to travel solo? Explorer Tours makes it easy to book solo trips and meet amazing people along the way. Whether you're heading to Iceland or Thailand, there's a group adventure waiting for you.
+              LOKA Logistics is our intelligent logistics and delivery ecosystem built to power modern commerce. Designed for businesses, marketplaces, logistics providers, airports, estates, and cities, it connects customers, merchants, dispatch riders, and fleet operators through one integrated digital ecosystem.
             </p>
             <Link
-              to="/routes"
+              to="/shop/loka-logistics"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold text-sm hover:opacity-90 transition"
             >
-              Explore trips <ArrowRight className="w-4 h-4" />
+              Explore the platform <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>
           <motion.div
@@ -169,8 +169,9 @@ const Index = () => {
             viewport={{ once: true }}
             className="rounded-lg overflow-hidden shadow-md"
           >
-            <img src={heroDesert} alt="Adventure trip promotion" className="w-full h-80 object-cover" />
+            <img src={heroDesert} alt="LOKA Logistics delivery and mobility platform" className="w-full h-80 object-cover" />
           </motion.div>
+
         </div>
       </section>
 
