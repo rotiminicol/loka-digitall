@@ -185,17 +185,17 @@ const Index = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 src={bloggers}
-                alt="The We Are Travellers team"
+                alt="The LOKA Digital team"
                 className="rounded-lg shadow-md w-full h-96 object-cover"
               />
               {/* Team member badges */}
               <div className="absolute -top-4 -right-4 bg-card rounded-full w-20 h-20 shadow-lg flex flex-col items-center justify-center text-center border-2 border-border">
-                <span className="text-[9px] font-medium text-muted-foreground">Travel Blogger</span>
-                <span className="text-xs font-bold text-foreground font-display">Michael</span>
+                <span className="text-[9px] font-medium text-muted-foreground">Based in</span>
+                <span className="text-xs font-bold text-foreground font-display">Lagos</span>
               </div>
               <div className="absolute -bottom-4 -left-4 bg-card rounded-full w-20 h-20 shadow-lg flex flex-col items-center justify-center text-center border-2 border-border">
-                <span className="text-[9px] font-medium text-muted-foreground">Founder</span>
-                <span className="text-xs font-bold text-foreground font-display">Sarah</span>
+                <span className="text-[9px] font-medium text-muted-foreground">Built for</span>
+                <span className="text-xs font-bold text-foreground font-display">Africa</span>
               </div>
             </div>
             <motion.div
@@ -204,22 +204,23 @@ const Index = () => {
               viewport={{ once: true }}
               className="order-1 md:order-2"
             >
-              <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Meet the Team</p>
+              <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">About LOKA</p>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4 italic">
-                We are We Are Travellers
+                Engineering tomorrow's businesses
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
-                After a world journey in an old Land Cruiser through South America and exploring remote regions of Europe, we decided to share our passion for travel with fellow adventurers. Since 2013, we've been writing about our discoveries.
+                LOKA is a Nigerian technology company focused on Digital Transformation, AI Strategy, and Product Engineering. We combine business strategy, user-centered design, software engineering, cloud infrastructure, and artificial intelligence to help organizations create measurable business outcomes.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-                Our team of travel bloggers now spans the globe — from desert road trips to Arctic adventures, we've got you covered.
+                Our multidisciplinary team works with startups, SMEs, government agencies, logistics companies, healthcare providers, educational institutions, financial organizations, and large enterprises across Africa. Our philosophy is simple: technology should simplify complexity, not create it.
               </p>
               <Link
                 to="/destinations"
                 className="inline-flex items-center gap-2 border border-primary text-primary px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-primary hover:text-primary-foreground transition-all"
               >
-                Read more about us <ArrowRight className="w-3.5 h-3.5" />
+                Explore what we do <ArrowRight className="w-3.5 h-3.5" />
               </Link>
+
             </motion.div>
           </div>
         </div>
