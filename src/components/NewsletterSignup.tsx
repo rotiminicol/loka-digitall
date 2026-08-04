@@ -26,7 +26,7 @@ const NewsletterSignup = ({ variant = "inline", backgroundImage }: NewsletterSig
             <div className="absolute inset-0 bg-earth-dark/60" />
             <div className="relative h-full flex items-center justify-center px-8">
               <h3 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground italic leading-snug text-center">
-                Stay up to date<br />with our new<br />travels?
+                Ready to transform<br />your business?
               </h3>
             </div>
           </div>

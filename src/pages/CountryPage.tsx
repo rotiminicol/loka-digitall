@@ -261,11 +261,11 @@ const CountryPage = () => {
         <NewsletterSignup variant="split" backgroundImage={country.heroImage} />
       </section>
 
-      {/* Spotify playlist */}
+      {/* Contact CTA */}
       <section className="max-w-3xl mx-auto px-4 md:px-8 pb-16 text-center">
         <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Ready to start?</p>
         <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground italic mb-6">
-          Get in the travel vibes<br />with our Spotify playlist
+          Let's build technology that<br />creates measurable impact
         </h2>
         <a
           href="mailto:hello@loka.africa"
