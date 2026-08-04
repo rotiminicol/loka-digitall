@@ -120,12 +120,13 @@ const Index = () => {
         <div className="relative max-w-7xl mx-auto px-4 md:px-8 text-center">
           {/* Small stamp */}
           <div className="stamp-badge text-primary-foreground/60 border-primary-foreground/30 mx-auto mb-6 w-16 h-16 text-[8px]">
-            <span>Where<br/>To Next</span>
+            <span>What<br/>We Do</span>
           </div>
-          <p className="text-primary-foreground/50 text-[10px] uppercase tracking-[0.3em] mb-2">Where to next?</p>
+          <p className="text-primary-foreground/50 text-[10px] uppercase tracking-[0.3em] mb-2">What we do</p>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-primary-foreground mb-10 italic">
-            Choose your adventure
+            Choose your capability
           </h2>
+
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {continentTags.map((tag) => (
               <Link
