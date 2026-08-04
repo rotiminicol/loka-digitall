@@ -49,8 +49,9 @@ const Header = () => {
             onMouseLeave={() => setMegaMenuOpen(false)}
           >
             <button className="flex items-center gap-1 text-sm text-foreground/70 hover:text-foreground transition font-medium tracking-wide">
-              Destinations <ChevronDown className="w-3.5 h-3.5" />
+              Services <ChevronDown className="w-3.5 h-3.5" />
             </button>
+
             <AnimatePresence>
               {megaMenuOpen && (
                 <motion.div
@@ -89,19 +90,20 @@ const Header = () => {
             </AnimatePresence>
           </div>
           <Link to="/routes" className="text-sm text-foreground/70 hover:text-foreground transition font-medium tracking-wide">
-            Travel Routes
+            How We Work
           </Link>
           <Link to="/shop" className="text-sm text-foreground/70 hover:text-foreground transition font-medium tracking-wide">
-            Shop
+            Products
           </Link>
         </nav>
 
         {/* Center Logo */}
         <Link to="/" className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center">
           <span className="font-display text-2xl md:text-3xl font-bold text-foreground tracking-tight italic">
-            We Are Travellers
+            LOKA Digital
           </span>
         </Link>
+
 
         {/* Right side */}
         <div className="flex items-center gap-2 ml-auto">
@@ -155,7 +157,7 @@ const Header = () => {
                 <div className="mt-4 space-y-4 max-h-80 overflow-y-auto">
                   {searchResults.destinations.length > 0 && (
                     <div>
-                      <p className="text-[10px] uppercase tracking-[0.2em] font-semibold text-muted-foreground mb-2">Destinations</p>
+                      <p className="text-[10px] uppercase tracking-[0.2em] font-semibold text-muted-foreground mb-2">Services</p>
                       <div className="space-y-1">
                         {searchResults.destinations.map(({ country, continent }) => (
                           <Link
@@ -177,7 +179,7 @@ const Header = () => {
 
                   {searchResults.articles.length > 0 && (
                     <div>
-                      <p className="text-[10px] uppercase tracking-[0.2em] font-semibold text-muted-foreground mb-2">Articles</p>
+                      <p className="text-[10px] uppercase tracking-[0.2em] font-semibold text-muted-foreground mb-2">Insights</p>
                       <div className="space-y-1">
                         {searchResults.articles.map((article) => (
                           <Link
@@ -222,8 +224,9 @@ const Header = () => {
             </button>
             <nav className="mt-12 space-y-6">
               <Link to="/destinations" onClick={() => setMobileMenuOpen(false)} className="block text-lg font-display font-bold text-foreground">
-                All Destinations
+                All Services
               </Link>
+
               {continents.map((c) => (
                 <div key={c.slug}>
                   <Link to={`/destinations/${c.slug}`} onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-muted-foreground uppercase tracking-wide mb-2">
@@ -240,8 +243,9 @@ const Header = () => {
                   </ul>
                 </div>
               ))}
-              <Link to="/routes" onClick={() => setMobileMenuOpen(false)} className="block text-lg font-display font-bold text-foreground">Travel Routes</Link>
-              <Link to="/shop" onClick={() => setMobileMenuOpen(false)} className="block text-lg font-display font-bold text-foreground">Shop</Link>
+              <Link to="/routes" onClick={() => setMobileMenuOpen(false)} className="block text-lg font-display font-bold text-foreground">How We Work</Link>
+              <Link to="/shop" onClick={() => setMobileMenuOpen(false)} className="block text-lg font-display font-bold text-foreground">Products</Link>
+
             </nav>
           </motion.div>
         )}
