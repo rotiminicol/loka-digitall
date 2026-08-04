@@ -5,23 +5,17 @@ import { continents } from "@/data/destinations";
 
 // Flag emoji map for countries
 const countryFlags: Record<string, string> = {
-  "France": "🇫🇷", "Greece": "🇬🇷", "Iceland": "🇮🇸", "Italy": "🇮🇹",
-  "Netherlands": "🇳🇱", "Portugal": "🇵🇹", "Spain": "🇪🇸",
-  "Philippines": "🇵🇭", "Indonesia": "🇮🇩", "Japan": "🇯🇵", "China": "🇨🇳",
-  "Sri Lanka": "🇱🇰", "Thailand": "🇹🇭", "Vietnam": "🇻🇳",
-  "Botswana": "🇧🇼", "Kenya": "🇰🇪", "Morocco": "🇲🇦", "South Africa": "🇿🇦",
-  "Costa Rica": "🇨🇷", "Mexico": "🇲🇽",
-  "Peru": "🇵🇪", "Colombia": "🇨🇴",
-  "Australia": "🇦🇺", "New Zealand": "🇳🇿",
-  "United States": "🇺🇸", "Canada": "🇨🇦",
+  "Transformation Strategy": "◆", "Process Automation": "⚙", "Legacy Modernization": "▲",
+  "AI Readiness": "◇", "Generative AI": "✦", "AI Governance": "■",
+  "Product Discovery": "○", "Applications & Platforms": "●", "DevOps & Quality": "▸",
 };
 
 // Pair continents for 2-column layout
 const continentPairs = [
-  ["Africa", "Asia"],
-  ["Europe", "Central America"],
-  ["North America", "Oceania"],
-  ["South America"],
+  ["Digital Transformation", "AI Strategy"],
+  ["Product Engineering", "Enterprise Solutions"],
+  ["Intelligent Automation", "Industries"],
+  ["Who We Work With"],
 ];
 
 const Destinations = () => {
@@ -42,7 +36,7 @@ const Destinations = () => {
         {/* Breadcrumb */}
         <div className="absolute top-6 left-6 md:left-16 z-10">
           <Link to="/" className="text-primary-foreground/40 text-xs hover:text-primary-foreground/70 transition">
-            We Are Travellers
+            LOKA Digital
           </Link>
         </div>
 
@@ -52,9 +46,9 @@ const Destinations = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-primary-foreground/40 text-[10px] uppercase tracking-[0.4em] mb-3 font-medium">Discover Our</p>
+            <p className="text-primary-foreground/40 text-[10px] uppercase tracking-[0.4em] mb-3 font-medium">What We Do</p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground italic tracking-tight">
-              Destinations
+              Services
             </h1>
           </motion.div>
         </div>
@@ -75,7 +69,7 @@ const Destinations = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-sm text-muted-foreground leading-relaxed"
         >
-          Here you'll find an overview of all destinations we've written about and gathered the best tips for!
+          Technology is no longer just a support function — it is the engine of growth.
           This way you can plan your next trip in no time. Do you already know what your next vacation destination will be?
           Or are you still looking for inspiration? Below you'll find tips for destinations in Asia, Africa, Central America,
           South America, Oceania and North America. Enjoy!
@@ -115,7 +109,7 @@ const Destinations = () => {
                         to={`/destinations/${continent.slug}/${country.slug}`}
                         className="inline-flex items-center gap-1.5 bg-card border border-border rounded-full px-3 py-1.5 text-xs text-foreground/70 hover:border-primary hover:text-foreground transition-all"
                       >
-                        <span className="text-sm leading-none">{countryFlags[country.name] || "🌍"}</span>
+                        <span className="text-sm leading-none">{countryFlags[country.name] || "◆"}</span>
                         {country.name}
                       </Link>
                     ))}

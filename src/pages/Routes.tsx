@@ -10,12 +10,12 @@ const Routes = () => {
     <Layout>
       <section className="bg-muted py-16 md:py-24 text-center px-4">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3">Plan your journey</p>
+          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3">Our process</p>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Travel Routes
+            How We Work
           </h1>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Curated multi-destination itineraries to inspire your next big adventure. Each route includes day-by-day planning, budget tips, and insider recommendations.
+            Discover, design, build, deploy, optimize. Our engagements follow a clear, phased path scoped to your organization, with measurable outcomes at every stage.
           </p>
         </motion.div>
       </section>
@@ -53,7 +53,7 @@ const Routes = () => {
                   to={`/routes/${route.id}`}
                   className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
                 >
-                  Read full itinerary <ArrowRight className="w-4 h-4" />
+                  See the full engagement <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </motion.div>

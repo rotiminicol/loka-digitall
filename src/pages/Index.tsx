@@ -256,7 +256,7 @@ const Index = () => {
       {/* Popular Destinations by Continent */}
       <section className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
         <div className="text-center mb-12">
-          <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Have you been here before?</p>
+          <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Explore our capabilities</p>
         </div>
         <div className="grid md:grid-cols-2 gap-12">
           {continents.slice(0, 4).map((continent) => (
@@ -287,7 +287,7 @@ const Index = () => {
       <section className="border-t border-border">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-20">
           <div className="text-center mb-10">
-            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">When do you want to travel?</p>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Where are you in your journey?</p>
           </div>
           <div className="flex flex-wrap justify-center gap-2">
             {months.map((month) => (

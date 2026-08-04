@@ -83,7 +83,7 @@ const ArticlePage = () => {
             </Link>
           ) : (
             <Link to="/destinations" className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
-              <ArrowLeft className="w-4 h-4" /> Back to destinations
+              <ArrowLeft className="w-4 h-4" /> Back to services
             </Link>
           )}
         </div>
@@ -93,7 +93,7 @@ const ArticlePage = () => {
       {related.length > 0 && (
         <section className="bg-muted">
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-16">
-            <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">More travel stories</h2>
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">More insights</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {related.map((a) => (
                 <ArticleCard key={a.id} article={a} />
