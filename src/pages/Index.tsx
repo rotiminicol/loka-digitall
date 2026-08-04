@@ -231,22 +231,23 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Our Books</p>
+              <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Our Products</p>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4 italic">
-                Want the very best travel tips?
+                Platforms we build and operate
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
-                We've distilled years of travel experience into comprehensive guidebooks. Packed with insider tips, hidden gems, and practical advice for your next adventure.
+                LOKA is not an agency. Alongside our consulting work we build and run our own digital platforms — LOKA Logistics, Payraty, eSecondarySchool, and the LOKA AI Platform — each solving a real operational problem at scale.
               </p>
               <Link
                 to="/shop"
                 className="inline-flex items-center gap-2 border border-primary text-primary px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-primary hover:text-primary-foreground transition-all"
               >
-                Browse our guides <ArrowRight className="w-3.5 h-3.5" />
+                See our products <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
-              <img src={travelBooks} alt="Travel guide books" className="w-full h-80 object-cover" />
+              <img src={travelBooks} alt="LOKA digital platforms and products" className="w-full h-80 object-cover" />
+
             </div>
           </div>
         </div>
