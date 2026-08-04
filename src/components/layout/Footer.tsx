@@ -10,10 +10,10 @@ const Footer = () => {
           {/* About */}
           <div>
             <span className="font-display text-xl font-bold text-primary-foreground italic block mb-4">
-              We Are Travellers
+              LOKA Digital
             </span>
             <p className="text-xs leading-relaxed text-primary-foreground/50">
-              At We Are Travellers, we share travel stories, practical tips, and inspiration for your next adventure. After years of exploring the world, we created this platform to help fellow travelers discover the beauty our planet has to offer.
+              LOKA is a Nigerian technology company focused on Digital Transformation, AI Strategy, and Product Engineering. We combine business strategy, design, software engineering, cloud infrastructure, and artificial intelligence to help organizations create measurable business outcomes.
             </p>
             <div className="flex gap-3 mt-4">
               {[Instagram, Facebook, Youtube].map((Icon, i) => (
@@ -26,20 +26,22 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-display font-bold text-primary-foreground mb-4 text-sm">Contact & Connect</h4>
+            <h4 className="font-display font-bold text-primary-foreground mb-4 text-sm">Contact</h4>
             <p className="text-xs text-primary-foreground/50 mb-2">
-              Have a question or want to collaborate?
+              Innovation starts with a conversation.
             </p>
             <p className="text-xs text-primary-foreground/50">
-              We Are Travellers is open for collaborations and sponsored content. Feel free to reach out!
+              Lagos, Nigeria<br />
+              Email: hello@loka.africa<br />
+              Phone: +234 XXX XXX XXXX
             </p>
           </div>
 
-          {/* Latest tips */}
+          {/* Capabilities */}
           <div>
-            <h4 className="font-display font-bold text-primary-foreground mb-4 text-sm">Latest Tips</h4>
+            <h4 className="font-display font-bold text-primary-foreground mb-4 text-sm">Capabilities</h4>
             <ul className="space-y-2">
-              {["Accommodation tips", "Travel guides", "Attractions", "Road trips", "Food & Culture"].map((cat) => (
+              {["Digital Transformation", "Artificial Intelligence", "Product Engineering", "Enterprise Solutions", "Cloud & Automation"].map((cat) => (
                 <li key={cat}>
                   <Link to="/destinations" className="text-xs text-primary-foreground/40 hover:text-primary transition">
                     {cat}
@@ -51,14 +53,14 @@ const Footer = () => {
 
           {/* Products */}
           <div>
-            <h4 className="font-display font-bold text-primary-foreground mb-4 text-sm">Our Travel Guides</h4>
+            <h4 className="font-display font-bold text-primary-foreground mb-4 text-sm">Our Products</h4>
             <div className="space-y-2">
               {products.map((product) => (
                 <Link key={product.id} to={`/shop/${product.id}`} className="flex items-center gap-3 bg-primary-foreground/5 rounded-md p-2 hover:bg-primary-foreground/10 transition">
                   <img src={product.image} alt={product.name} className="w-10 h-10 rounded object-cover" loading="lazy" />
                   <div>
                     <p className="text-xs font-medium text-primary-foreground/80">{product.name}</p>
-                    <p className="text-[10px] text-primary">€{product.price.toFixed(2)}</p>
+                    <p className="text-[10px] text-primary">{product.format}</p>
                   </div>
                 </Link>
               ))}
@@ -67,7 +69,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 text-center">
-          <p className="text-[10px] text-primary-foreground/30 tracking-wide">© 2025 We Are Travellers. All rights reserved.</p>
+          <p className="text-[10px] text-primary-foreground/30 tracking-wide">© LOKA Digital. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

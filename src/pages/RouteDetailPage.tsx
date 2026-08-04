@@ -22,7 +22,7 @@ const RouteDetailPage = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <p className="text-primary text-sm uppercase tracking-widest font-semibold mb-2">{route.duration} itinerary</p>
+            <p className="text-primary text-sm uppercase tracking-widest font-semibold mb-2">{route.duration} engagement</p>
             <h1 className="font-display text-3xl md:text-5xl font-bold text-white mb-2">{route.title}</h1>
             <p className="text-white/80 text-lg max-w-2xl">{route.subtitle}</p>
           </motion.div>
@@ -54,7 +54,7 @@ const RouteDetailPage = () => {
       {/* Highlights */}
       <section className="bg-muted">
         <div className="max-w-4xl mx-auto px-4 md:px-8 py-12">
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8">Trip Highlights</h2>
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8">What You Get</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {route.highlights.map((h, i) => (
               <motion.div
@@ -75,7 +75,7 @@ const RouteDetailPage = () => {
 
       {/* Itinerary */}
       <section className="max-w-4xl mx-auto px-4 md:px-8 py-16">
-        <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-10">Day-by-Day Itinerary</h2>
+        <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-10">Phase by Phase Itinerary</h2>
         <div className="space-y-0">
           {route.itinerary.map((item, i) => (
             <motion.div
@@ -99,7 +99,7 @@ const RouteDetailPage = () => {
       <section className="bg-accent/30">
         <div className="max-w-4xl mx-auto px-4 md:px-8 py-12">
           <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8 flex items-center gap-3">
-            <Lightbulb className="w-7 h-7 text-primary" /> Practical Tips
+            <Lightbulb className="w-7 h-7 text-primary" /> What Makes It Work
           </h2>
           <ul className="space-y-4">
             {route.tips.map((tip, i) => (
@@ -115,7 +115,7 @@ const RouteDetailPage = () => {
       {/* Other routes */}
       {otherRoutes.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 md:px-8 py-16">
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">More travel routes</h2>
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">Other engagements</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {otherRoutes.map(r => (
               <Link key={r.id} to={`/routes/${r.id}`} className="group bg-card rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
@@ -136,7 +136,7 @@ const RouteDetailPage = () => {
       {/* Back */}
       <div className="max-w-4xl mx-auto px-4 md:px-8 pb-8">
         <Link to="/routes" className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
-          <ArrowLeft className="w-4 h-4" /> All travel routes
+          <ArrowLeft className="w-4 h-4" /> All engagements
         </Link>
       </div>
 

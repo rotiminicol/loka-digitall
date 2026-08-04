@@ -29,7 +29,7 @@ const ArticleCard = ({ article }: { article: Article }) => {
           to={`/article/${article.id}`}
           className="inline-flex items-center gap-2 text-primary font-semibold text-sm border border-primary rounded-full px-5 py-2 hover:bg-primary hover:text-primary-foreground transition-all"
         >
-          Read more <ArrowRight className="w-3.5 h-3.5" />
+          Read insight <ArrowRight className="w-3.5 h-3.5" />
         </Link>
       </div>
     </div>

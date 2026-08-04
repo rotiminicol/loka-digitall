@@ -8,15 +8,9 @@ import { ArrowRight } from "lucide-react";
 import NotFound from "./NotFound";
 
 const countryFlags: Record<string, string> = {
-  "France": "🇫🇷", "Greece": "🇬🇷", "Iceland": "🇮🇸", "Italy": "🇮🇹",
-  "Netherlands": "🇳🇱", "Portugal": "🇵🇹", "Spain": "🇪🇸",
-  "Philippines": "🇵🇭", "Indonesia": "🇮🇩", "Japan": "🇯🇵", "China": "🇨🇳",
-  "Sri Lanka": "🇱🇰", "Thailand": "🇹🇭", "Vietnam": "🇻🇳",
-  "Botswana": "🇧🇼", "Kenya": "🇰🇪", "Morocco": "🇲🇦", "South Africa": "🇿🇦",
-  "Costa Rica": "🇨🇷", "Mexico": "🇲🇽",
-  "Peru": "🇵🇪", "Colombia": "🇨🇴",
-  "Australia": "🇦🇺", "New Zealand": "🇳🇿",
-  "United States": "🇺🇸", "Canada": "🇨🇦",
+  "Transformation Strategy": "◆", "Process Automation": "⚙", "Legacy Modernization": "▲",
+  "AI Readiness": "◇", "Generative AI": "✦", "AI Governance": "■",
+  "Product Discovery": "○", "Applications & Platforms": "●", "DevOps & Quality": "▸",
 };
 
 const ContinentPage = () => {
@@ -40,9 +34,9 @@ const ContinentPage = () => {
 
         {/* Breadcrumb */}
         <div className="absolute top-6 left-6 md:left-16 z-10 flex items-center gap-2 text-xs">
-          <Link to="/" className="text-primary-foreground/40 hover:text-primary-foreground/70 transition">We Are Travellers</Link>
+          <Link to="/" className="text-primary-foreground/40 hover:text-primary-foreground/70 transition">LOKA Digital</Link>
           <span className="text-primary-foreground/20">›</span>
-          <Link to="/destinations" className="text-primary-foreground/40 hover:text-primary-foreground/70 transition">Destinations</Link>
+          <Link to="/destinations" className="text-primary-foreground/40 hover:text-primary-foreground/70 transition">Services</Link>
         </div>
 
         <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
@@ -82,7 +76,7 @@ const ContinentPage = () => {
               to={`/destinations/${continent.slug}/${country.slug}`}
               className="inline-flex items-center gap-1.5 bg-card border border-border rounded-full px-3 py-1.5 text-xs text-foreground/70 hover:border-primary hover:text-foreground transition-all"
             >
-              <span className="text-sm leading-none">{countryFlags[country.name] || "🌍"}</span>
+              <span className="text-sm leading-none">{countryFlags[country.name] || "◆"}</span>
               {country.name}
             </Link>
           ))}
@@ -93,7 +87,7 @@ const ContinentPage = () => {
       {allArticles.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 md:px-8 pb-20">
           <div className="text-center mb-10">
-            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Latest stories</p>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Insights</p>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground italic">
               Latest from {continent.name}
             </h2>
@@ -118,7 +112,7 @@ const ContinentPage = () => {
       <section className="bg-earth-cream">
         <div className="max-w-6xl mx-auto px-4 md:px-8 py-16 md:py-20">
           <div className="text-center mb-10">
-            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Explore by country</p>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Explore this practice</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {continent.countries.map((country) => (
@@ -128,10 +122,10 @@ const ContinentPage = () => {
                 className="flex items-center justify-between bg-card border border-border rounded-lg px-5 py-4 hover:border-primary hover:shadow-sm transition-all group"
               >
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">{countryFlags[country.name] || "🌍"}</span>
+                  <span className="text-2xl">{countryFlags[country.name] || "◆"}</span>
                   <div>
                     <span className="font-display text-lg font-bold text-foreground">{country.name}</span>
-                    <span className="block text-[10px] text-muted-foreground">{country.articles.length} articles</span>
+                    <span className="block text-[10px] text-muted-foreground">{country.articles.length} insights</span>
                   </div>
                 </div>
                 <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition" />

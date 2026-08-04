@@ -18,7 +18,7 @@ const ProductDetailPage = () => {
       {/* Main content */}
       <section className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-20">
         <Link to="/shop" className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all mb-8">
-          <ArrowLeft className="w-4 h-4" /> Back to shop
+          <ArrowLeft className="w-4 h-4" /> Back to products
         </Link>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -48,17 +48,17 @@ const ProductDetailPage = () => {
             <p className="text-muted-foreground leading-relaxed mb-6">{product.description}</p>
 
             <div className="flex items-center gap-4 mb-6 text-sm text-muted-foreground">
-              <span className="flex items-center gap-1.5"><BookOpen className="w-4 h-4" /> {product.pages} pages</span>
+              <span className="flex items-center gap-1.5"><BookOpen className="w-4 h-4" /> {product.pages} modules</span>
               <span className="flex items-center gap-1.5"><FileText className="w-4 h-4" /> {product.format}</span>
             </div>
 
             <div className="bg-muted p-6 rounded-xl mb-8">
               <div className="flex items-end justify-between mb-4">
-                <span className="text-3xl font-bold text-foreground">€{product.price.toFixed(2)}</span>
-                <span className="text-sm text-muted-foreground">Instant digital download</span>
+                <span className="text-3xl font-bold text-foreground">Enterprise pricing</span>
+                <span className="text-sm text-muted-foreground">Deployed and supported by LOKA</span>
               </div>
               <button className="w-full bg-primary text-primary-foreground px-6 py-3.5 rounded-lg font-semibold hover:opacity-90 transition inline-flex items-center justify-center gap-2">
-                <ShoppingCart className="w-5 h-5" /> Add to cart
+                <ShoppingCart className="w-5 h-5" /> Request a demo
               </button>
             </div>
 
@@ -79,7 +79,7 @@ const ProductDetailPage = () => {
       {/* Table of contents */}
       <section className="bg-muted">
         <div className="max-w-4xl mx-auto px-4 md:px-8 py-16">
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">What's inside</h2>
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">Inside the platform</h2>
           <div className="space-y-6">
             {product.contents.map((item, i) => (
               <motion.div
@@ -100,7 +100,7 @@ const ProductDetailPage = () => {
       {/* Other products */}
       {otherProducts.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 md:px-8 py-16">
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">You might also like</h2>
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">Other LOKA products</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {otherProducts.map(p => (
               <Link key={p.id} to={`/shop/${p.id}`} className="group bg-card rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">

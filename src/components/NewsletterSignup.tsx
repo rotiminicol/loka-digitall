@@ -26,7 +26,7 @@ const NewsletterSignup = ({ variant = "inline", backgroundImage }: NewsletterSig
             <div className="absolute inset-0 bg-earth-dark/60" />
             <div className="relative h-full flex items-center justify-center px-8">
               <h3 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground italic leading-snug text-center">
-                Stay up to date<br />with our new<br />travels?
+                Ready to transform<br />your business?
               </h3>
             </div>
           </div>
@@ -76,7 +76,7 @@ const NewsletterSignup = ({ variant = "inline", backgroundImage }: NewsletterSig
           <div className="text-center max-w-lg">
             <p className="text-primary-foreground/60 text-[10px] uppercase tracking-[0.3em] mb-2">Stay Updated</p>
             <h3 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-6 italic">
-              Never miss a new travel story
+              Insights from the LOKA team
             </h3>
             <form onSubmit={handleSubmit} className="flex gap-2">
               <input
@@ -102,9 +102,9 @@ const NewsletterSignup = ({ variant = "inline", backgroundImage }: NewsletterSig
 
   return (
     <section className="bg-earth-cream border border-border rounded-lg p-8 md:p-12 text-center max-w-3xl mx-auto">
-      <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Where do you want to go?</p>
+      <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Innovation starts with a conversation</p>
       <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4 italic">
-        Get travel vibes straight to your inbox
+        Book a strategy session
       </h3>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
         <input
