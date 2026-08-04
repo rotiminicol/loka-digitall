@@ -91,12 +91,13 @@ const Index = () => {
       <section className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-20">
         <div className="text-center mb-12">
           <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">
-            All the tips you need for your next trip
+            We don't simply build software — we solve business problems using technology
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground italic">
-            Discover our latest travel tips
+            Latest thinking from LOKA
           </h2>
         </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuredArticles.map((article, i) => (
             <motion.div
