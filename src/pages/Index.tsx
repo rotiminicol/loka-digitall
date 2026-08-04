@@ -15,13 +15,14 @@ import bloggers from "@/assets/bloggers.jpg";
 import travelBooks from "@/assets/travel-books.jpg";
 
 const heroSlides = [
-  { image: heroGreece, alt: "Santorini Greece sunset", subtitle: "Van road trips around the world..." },
-  { image: heroDesert, alt: "Desert road trip adventure", subtitle: "Discover untouched landscapes..." },
-  { image: heroCamping, alt: "Coastal camping van life", subtitle: "Adventure awaits everywhere..." },
+  { image: heroGreece, alt: "LOKA digital transformation engagement", subtitle: "We build the future of business..." },
+  { image: heroDesert, alt: "LOKA logistics and mobility platform", subtitle: "Transform faster. Operate smarter..." },
+  { image: heroCamping, alt: "LOKA product engineering team", subtitle: "Technology that solves business problems..." },
 ];
 
-const continentTags = ["Africa", "Asia", "Europe", "Central America", "South America", "Oceania", "North America"];
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const continentTags = ["Digital Transformation", "AI Strategy", "Product Engineering", "Enterprise Solutions", "Intelligent Automation", "Industries", "Who We Work With"];
+const months = ["Strategy", "Discovery", "Design", "Architecture", "Build", "Integration", "Automation", "AI Enablement", "Cloud", "Security", "Launch", "Optimization"];
+
 
 const Index = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
