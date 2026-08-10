@@ -156,12 +156,14 @@ const Index = () => {
             <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
               LOKA Logistics is our intelligent logistics and delivery ecosystem built to power modern commerce. Designed for businesses, marketplaces, logistics providers, airports, estates, and cities, it connects customers, merchants, dispatch riders, and fleet operators through one integrated digital ecosystem.
             </p>
-            <Link
-              to="/shop/loka-logistics"
+            <a
+              href="https://loka-product-page-elevate.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold text-sm hover:opacity-90 transition"
             >
               Explore the platform <ArrowRight className="w-4 h-4" />
-            </Link>
+            </a>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 30 }}

@@ -31,7 +31,7 @@ export const products: Product[] = [
     ],
     pages: 14,
     format: "Cloud platform + mobile apps",
-    url: "https://loka.africa",
+    url: "https://loka-product-page-elevate.vercel.app/",
     contents: [
       "Multi-vendor Marketplace — onboard merchants, manage catalogues and inventory, and settle vendors automatically with full dispute handling.",
       "Last-mile Delivery & Dispatch Management — intelligent assignment of orders to the right rider based on location, capacity, and service level.",
@@ -117,7 +117,7 @@ export const products: Product[] = [
     ],
     pages: 9,
     format: "Cloud platform + integrations",
-    url: "https://loka.africa",
+    url: "https://loka-product-page-elevate.vercel.app/",
     contents: [
       "Knowledge Grounding — your policies, contracts, and operational data indexed into a retrieval layer so answers are traceable to a source document.",
       "AI Assistants — internal and customer-facing assistants with configurable guardrails and a clear escalation path to a human.",
