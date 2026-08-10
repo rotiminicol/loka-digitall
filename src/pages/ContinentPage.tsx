@@ -41,7 +41,7 @@ const ContinentPage = () => {
 
         <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-primary-foreground/40 text-[10px] uppercase tracking-[0.4em] mb-3 font-medium">Welcome to</p>
+            <p className="text-primary-foreground/40 text-[10px] uppercase tracking-[0.4em] mb-3 font-medium">Our Practice</p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground italic tracking-tight">
               {continent.name}
             </h1>
@@ -112,7 +112,7 @@ const ContinentPage = () => {
       <section className="bg-earth-cream">
         <div className="max-w-6xl mx-auto px-4 md:px-8 py-16 md:py-20">
           <div className="text-center mb-10">
-            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Explore this practice</p>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Capabilities within this practice</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {continent.countries.map((country) => (

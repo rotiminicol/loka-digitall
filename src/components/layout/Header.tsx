@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Search, Menu, X, ShoppingCart, ChevronDown, MapPin, FileText } from "lucide-react";
+import { Search, Menu, X, ChevronDown, MapPin, FileText, CalendarDays } from "lucide-react";
 import { continents, getAllArticles, type Article, type Country, type Continent } from "@/data/destinations";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -61,29 +61,79 @@ const Header = () => {
                   transition={{ duration: 0.15 }}
                   className="absolute top-full left-1/2 -translate-x-1/2 w-[90vw] max-w-5xl bg-card shadow-xl rounded-lg border border-border mt-2 p-8"
                 >
-                  <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
-                    {continents.map((continent) => (
-                      <div key={continent.slug}>
-                        <Link
-                          to={`/destinations/${continent.slug}`}
-                          className="font-display font-bold text-foreground text-sm mb-3 block hover:text-primary transition"
-                        >
-                          {continent.name}
-                        </Link>
-                        <ul className="space-y-1.5">
-                          {continent.countries.slice(0, 5).map((country) => (
-                            <li key={country.slug}>
-                              <Link
-                                to={`/destinations/${continent.slug}/${country.slug}`}
-                                className="text-xs text-muted-foreground hover:text-primary transition"
-                              >
-                                {country.name}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    {/* Digital Transformation */}
+                    <div>
+                      <Link to="/destinations/digital-transformation" className="font-display font-bold text-foreground text-sm mb-3 block hover:text-primary transition">
+                        Digital Transformation
+                      </Link>
+                      <ul className="space-y-1.5">
+                        {["Transformation Strategy", "Process Automation", "Legacy Modernization", "Cloud Migration", "Data Strategy", "Digital Advisory"].map((s) => (
+                          <li key={s}><Link to="/destinations/digital-transformation" className="text-xs text-muted-foreground hover:text-primary transition">{s}</Link></li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* AI Strategy */}
+                    <div>
+                      <Link to="/destinations/ai-strategy" className="font-display font-bold text-foreground text-sm mb-3 block hover:text-primary transition">
+                        AI Strategy
+                      </Link>
+                      <ul className="space-y-1.5">
+                        {["AI Readiness Assessment", "AI Strategy & Roadmaps", "Generative AI Solutions", "AI Assistants & Chatbots", "Predictive Analytics", "AI Governance"].map((s) => (
+                          <li key={s}><Link to="/destinations/ai-strategy" className="text-xs text-muted-foreground hover:text-primary transition">{s}</Link></li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Product Engineering */}
+                    <div>
+                      <Link to="/destinations/product-engineering" className="font-display font-bold text-foreground text-sm mb-3 block hover:text-primary transition">
+                        Product Engineering
+                      </Link>
+                      <ul className="space-y-1.5">
+                        {["Mobile App Development", "Web Applications", "SaaS Products", "API Development", "UI/UX Design", "DevOps & Cloud"].map((s) => (
+                          <li key={s}><Link to="/destinations/product-engineering" className="text-xs text-muted-foreground hover:text-primary transition">{s}</Link></li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Enterprise Solutions */}
+                    <div>
+                      <Link to="/destinations/enterprise-solutions" className="font-display font-bold text-foreground text-sm mb-3 block hover:text-primary transition">
+                        Enterprise Solutions
+                      </Link>
+                      <ul className="space-y-1.5">
+                        {["ERP Platforms", "HR & Payroll Systems", "Learning Management", "Healthcare Platforms", "Logistics Platforms", "Government Solutions"].map((s) => (
+                          <li key={s}><Link to="/destinations/enterprise-solutions" className="text-xs text-muted-foreground hover:text-primary transition">{s}</Link></li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Intelligent Automation */}
+                    <div>
+                      <Link to="/destinations/intelligent-automation" className="font-display font-bold text-foreground text-sm mb-3 block hover:text-primary transition">
+                        Intelligent Automation
+                      </Link>
+                      <ul className="space-y-1.5">
+                        {["Robotic Process Automation", "Workflow Automation", "Document Automation", "Customer Service Automation", "AI-powered Operations"].map((s) => (
+                          <li key={s}><Link to="/destinations/intelligent-automation" className="text-xs text-muted-foreground hover:text-primary transition">{s}</Link></li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Bottom row */}
+                  <div className="mt-6 pt-5 border-t border-border flex items-center justify-between">
+                    <Link to="/destinations" className="text-xs font-semibold text-primary hover:underline">
+                      View all services →
+                    </Link>
+                    <Link
+                      to="/routes"
+                      className="inline-flex items-center gap-1.5 bg-primary text-primary-foreground px-4 py-2 rounded-md text-xs font-semibold hover:opacity-90 transition"
+                    >
+                      Book a Strategy Session
+                    </Link>
                   </div>
                 </motion.div>
               )}
@@ -115,9 +165,12 @@ const Header = () => {
             <Search className="w-4 h-4" />
           </button>
           <span className="text-foreground/60 text-sm hidden md:inline">Search</span>
-          <button className="p-2 text-foreground/60 hover:text-foreground transition relative ml-2" aria-label="Cart">
-            <ShoppingCart className="w-4 h-4" />
-          </button>
+          <Link
+            to="/routes"
+            className="hidden md:inline-flex items-center gap-1.5 ml-2 bg-primary text-primary-foreground px-4 py-2 rounded-md text-xs font-semibold hover:opacity-90 transition"
+          >
+            <CalendarDays className="w-3.5 h-3.5" /> Book a Session
+          </Link>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden p-2 text-foreground/60"
@@ -227,22 +280,29 @@ const Header = () => {
                 All Services
               </Link>
 
-              {continents.map((c) => (
+              {[
+                { label: "Digital Transformation", slug: "digital-transformation", items: ["Transformation Strategy", "Process Automation", "Legacy Modernization", "Cloud Migration", "Data Strategy"] },
+                { label: "AI Strategy", slug: "ai-strategy", items: ["AI Readiness Assessment", "AI Strategy & Roadmaps", "Generative AI Solutions", "AI Assistants & Chatbots", "AI Governance"] },
+                { label: "Product Engineering", slug: "product-engineering", items: ["Mobile App Development", "Web Applications", "SaaS Products", "UI/UX Design", "DevOps & Cloud"] },
+                { label: "Enterprise Solutions", slug: "enterprise-solutions", items: ["ERP Platforms", "HR & Payroll Systems", "Learning Management", "Healthcare Platforms", "Government Solutions"] },
+                { label: "Intelligent Automation", slug: "intelligent-automation", items: ["Robotic Process Automation", "Workflow Automation", "Document Automation", "Customer Service Automation"] },
+              ].map((c) => (
                 <div key={c.slug}>
                   <Link to={`/destinations/${c.slug}`} onClick={() => setMobileMenuOpen(false)} className="block text-xs font-bold text-muted-foreground uppercase tracking-wide mb-2">
-                    {c.name}
+                    {c.label}
                   </Link>
                   <ul className="space-y-1 ml-2">
-                    {c.countries.slice(0, 4).map((country) => (
-                      <li key={country.slug}>
-                        <Link to={`/destinations/${c.slug}/${country.slug}`} onClick={() => setMobileMenuOpen(false)} className="text-sm text-muted-foreground hover:text-primary">
-                          {country.name}
+                    {c.items.map((item) => (
+                      <li key={item}>
+                        <Link to={`/destinations/${c.slug}`} onClick={() => setMobileMenuOpen(false)} className="text-sm text-muted-foreground hover:text-primary">
+                          {item}
                         </Link>
                       </li>
                     ))}
                   </ul>
                 </div>
               ))}
+
               <Link to="/routes" onClick={() => setMobileMenuOpen(false)} className="block text-lg font-display font-bold text-foreground">How We Work</Link>
               <Link to="/shop" onClick={() => setMobileMenuOpen(false)} className="block text-lg font-display font-bold text-foreground">Products</Link>
 

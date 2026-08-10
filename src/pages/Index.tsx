@@ -1,23 +1,20 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, ChevronLeft, ChevronRight, Search } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import ArticleCard from "@/components/ArticleCard";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import { continents, featuredArticles } from "@/data/destinations";
 
-import heroGreece from "@/assets/hero-greece.jpg";
-import heroDesert from "@/assets/hero-desert.jpg";
-import heroCamping from "@/assets/hero-camping.jpg";
-import worldMap from "@/assets/world-map.jpg";
-import bloggers from "@/assets/bloggers.jpg";
-import travelBooks from "@/assets/travel-books.jpg";
+
 
 const heroSlides = [
-  { image: heroGreece, alt: "LOKA digital transformation engagement", subtitle: "We build the future of business..." },
-  { image: heroDesert, alt: "LOKA logistics and mobility platform", subtitle: "Transform faster. Operate smarter..." },
-  { image: heroCamping, alt: "LOKA product engineering team", subtitle: "Technology that solves business problems..." },
+  { image: "/hero1.png", alt: "LOKA Digital Transformation — We build the future of business", subtitle: "We build the future of business..." },
+  { image: "/hero2.png", alt: "LOKA AI Strategy — Turn Artificial Intelligence into measurable business value", subtitle: "Transform faster. Operate smarter..." },
+  { image: "/hero3.png", alt: "LOKA Product Engineering — From idea to launch", subtitle: "Technology that solves business problems..." },
+  { image: "/hero4.png", alt: "LOKA Enterprise Solutions — Helping organizations run smarter", subtitle: "Grow better with enterprise-grade technology..." },
+  { image: "/hero5.png", alt: "LOKA Intelligent Automation — Automate repetitive work, focus on innovation", subtitle: "Automate. Innovate. Accelerate." },
 ];
 
 const continentTags = ["Digital Transformation", "AI Strategy", "Product Engineering", "Enterprise Solutions", "Intelligent Automation", "Industries", "Who We Work With"];
@@ -64,18 +61,21 @@ const Index = () => {
             <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground tracking-tight mb-4 max-w-3xl italic leading-[1.1]">
               We build the future of business
             </h1>
-            <p className="text-primary-foreground/70 text-xs uppercase tracking-[0.2em] mb-6">Transform faster. Operate smarter. Grow better.</p>
-            <div className="flex items-center max-w-sm bg-card/90 backdrop-blur rounded-md overflow-hidden focus-within:ring-2 focus-within:ring-primary">
-              <input
-                type="text"
-                placeholder="Search services and insights..."
-                className="flex-1 bg-transparent pl-4 pr-2 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none text-sm"
-              />
-              <button className="flex items-center justify-center w-10 h-10 bg-primary text-primary-foreground rounded-md m-0.5 hover:bg-primary/90 transition-colors shrink-0">
-                <Search className="w-4 h-4" />
-              </button>
+            <p className="text-primary-foreground/70 text-xs uppercase tracking-[0.2em] mb-8">Transform faster. Operate smarter. Grow better.</p>
+            <div className="flex flex-wrap items-center gap-3">
+              <Link
+                to="/routes"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold text-sm hover:opacity-90 transition"
+              >
+                Book a Strategy Session <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link
+                to="/destinations"
+                className="inline-flex items-center gap-2 bg-primary-foreground/10 border border-primary-foreground/40 text-primary-foreground px-6 py-3 rounded-md font-semibold text-sm hover:bg-primary-foreground/20 transition backdrop-blur-sm"
+              >
+                Start Your Digital Transformation <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
-
           </motion.div>
         </div>
 
@@ -115,7 +115,7 @@ const Index = () => {
 
       {/* Where to Next - World Map */}
       <section className="relative py-24 overflow-hidden">
-        <img src={worldMap} alt="World map" className="absolute inset-0 w-full h-full object-cover opacity-20" />
+        <img src="/hero1.png" alt="LOKA Digital" className="absolute inset-0 w-full h-full object-cover opacity-20" />
         <div className="absolute inset-0 bg-earth-dark/90" />
         <div className="relative max-w-7xl mx-auto px-4 md:px-8 text-center">
           {/* Small stamp */}
@@ -169,7 +169,7 @@ const Index = () => {
             viewport={{ once: true }}
             className="rounded-lg overflow-hidden shadow-md"
           >
-            <img src={heroDesert} alt="LOKA Logistics delivery and mobility platform" className="w-full h-80 object-cover" />
+            <img src="/hero2.png" alt="LOKA Logistics delivery and mobility platform" className="w-full h-80 object-cover" />
           </motion.div>
 
         </div>
@@ -184,7 +184,7 @@ const Index = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                src={bloggers}
+                src="/work3.png"
                 alt="The LOKA Digital team"
                 className="rounded-lg shadow-md w-full h-96 object-cover"
               />
@@ -246,17 +246,18 @@ const Index = () => {
               </Link>
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
-              <img src={travelBooks} alt="LOKA digital platforms and products" className="w-full h-80 object-cover" />
+              <img src="/logistic3.png" alt="LOKA digital platforms and products" className="w-full h-80 object-cover" />
 
             </div>
           </div>
         </div>
       </section>
 
-      {/* Popular Destinations by Continent */}
+      {/* Our Core Capabilities */}
       <section className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
         <div className="text-center mb-12">
-          <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Explore our capabilities</p>
+          <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">What We Do</p>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground italic">Our Core Capabilities</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-12">
           {continents.slice(0, 4).map((continent) => (
@@ -276,18 +277,19 @@ const Index = () => {
                 to={`/destinations/${continent.slug}`}
                 className="inline-flex items-center gap-1 text-primary font-semibold text-xs mt-5 border border-primary rounded-full px-4 py-1.5 hover:bg-primary hover:text-primary-foreground transition-all"
               >
-                See all in {continent.name} <ArrowRight className="w-3 h-3" />
+                Explore {continent.name} <ArrowRight className="w-3 h-3" />
               </Link>
             </div>
           ))}
         </div>
       </section>
 
-      {/* When to Travel */}
+      {/* Engagement Journey */}
       <section className="border-t border-border">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-20">
           <div className="text-center mb-10">
-            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Where are you in your journey?</p>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Our Process</p>
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground italic">Where are you in your journey?</h2>
           </div>
           <div className="flex flex-wrap justify-center gap-2">
             {months.map((month) => (
@@ -299,6 +301,57 @@ const Index = () => {
               </button>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Why LOKA? */}
+      <section className="bg-earth-cream">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
+          <div className="text-center mb-12">
+            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Why Choose Us</p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground italic">Why LOKA?</h2>
+            <p className="text-muted-foreground text-sm mt-3">Because technology should deliver business results.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { title: "Business First", desc: "We understand business before writing code." },
+              { title: "AI Ready", desc: "Every solution is designed with AI in mind." },
+              { title: "Enterprise Grade", desc: "Secure, scalable, and built for growth." },
+              { title: "User-Centered Design", desc: "Simple experiences people enjoy using." },
+              { title: "Local Knowledge", desc: "Built in Africa for Africa with global engineering standards." },
+              { title: "Long-term Partnership", desc: "We stay with you after launch." },
+            ].map((item) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-card rounded-lg p-6 border border-border"
+              >
+                <h3 className="font-display text-lg font-bold text-foreground mb-2">{item.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Industries We Serve */}
+      <section className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
+        <div className="text-center mb-12">
+          <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Industries</p>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground italic">Industries We Serve</h2>
+          <p className="text-muted-foreground text-sm mt-3">Every industry is becoming a technology company.</p>
+        </div>
+        <div className="flex flex-wrap justify-center gap-3">
+          {["Logistics & Transportation", "Aviation", "Government", "Healthcare", "Education", "Financial Services", "Retail & Commerce", "Manufacturing", "Agriculture", "Hospitality", "Professional Services"].map((industry) => (
+            <span
+              key={industry}
+              className="bg-card border border-border text-foreground/70 px-5 py-2.5 rounded-full text-xs font-medium tracking-wide hover:border-primary hover:text-foreground transition-all cursor-default"
+            >
+              {industry}
+            </span>
+          ))}
         </div>
       </section>
 

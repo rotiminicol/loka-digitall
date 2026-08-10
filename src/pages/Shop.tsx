@@ -1,6 +1,6 @@
 import Layout from "@/components/layout/Layout";
 import { products } from "@/data/products";
-import { Star, ShoppingCart } from "lucide-react";
+import { Star, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import NewsletterSignup from "@/components/NewsletterSignup";
@@ -10,10 +10,10 @@ const Shop = () => {
     <Layout>
       <section className="bg-muted py-16 md:py-24 text-center px-4">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3">Featured products</p>
-          <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">Products</h1>
+          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3">Our Digital Platforms</p>
+          <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">Our Products</h1>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            LOKA builds and operates its own digital platforms. Each one is deployed, configured, and supported for your organization.
+            LOKA is not an agency. Alongside our consulting work, we build and operate our own digital platforms — each solving a real operational problem at scale. Deployed, configured, and supported for your organization.
           </p>
         </motion.div>
       </section>
@@ -53,9 +53,14 @@ const Shop = () => {
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-semibold text-muted-foreground">{product.format}</span>
-                  <button className="bg-primary text-primary-foreground px-3 py-2 rounded-lg font-semibold text-sm hover:opacity-90 transition inline-flex items-center gap-1.5">
-                    <ShoppingCart className="w-4 h-4" /> Enquire
-                  </button>
+                  <a
+                    href={product.url ?? `/shop/${product.id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-primary text-primary-foreground px-3 py-2 rounded-lg font-semibold text-sm hover:opacity-90 transition inline-flex items-center gap-1.5"
+                  >
+                    <ExternalLink className="w-4 h-4" /> Visit
+                  </a>
                 </div>
               </div>
             </motion.div>

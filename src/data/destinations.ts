@@ -33,14 +33,14 @@ export const continents: Continent[] = [
   {
     name: "Digital Transformation",
     slug: "digital-transformation",
-    heroImage: "/world-map.jpg",
+    heroImage: "/hero1.png",
     introduction:
       "Modernize your organization with technology that improves productivity, customer experience, and operational efficiency. We combine business strategy, engineering, and cloud infrastructure so transformation delivers measurable outcomes rather than expensive experiments.",
     countries: [
       {
         name: "Transformation Strategy",
         slug: "transformation-strategy",
-        heroImage: "/world-map.jpg",
+        heroImage: "/work1.png",
         about:
           "We start with the business, not the technology. Together we map your operating model, identify where value leaks, and build a transformation roadmap your leadership team can fund, sequence, and defend.",
         categories: ["Strategy", "Advisory", "Operations", "Data", "Cloud"],
@@ -56,7 +56,7 @@ export const continents: Continent[] = [
             id: "dt1",
             title: "How to Build a Digital Transformation Roadmap Your Board Will Approve",
             excerpt: "A practical sequence for turning ambition into a funded, measurable programme.",
-            image: "/world-map.jpg",
+            image: "/work1.png",
             category: "Strategy",
             date: "2026-06-18",
             author: "LOKA Strategy Team",
@@ -70,7 +70,7 @@ export const continents: Continent[] = [
             id: "dt2",
             title: "Technology Should Simplify Complexity, Not Create It",
             excerpt: "Our core philosophy and what it means for the systems we design.",
-            image: "/hero-desert.jpg",
+            image: "/work2.png",
             category: "Advisory",
             date: "2026-05-02",
             author: "LOKA Strategy Team",
@@ -85,7 +85,7 @@ export const continents: Continent[] = [
       {
         name: "Process Automation",
         slug: "process-automation",
-        heroImage: "/hero-desert.jpg",
+        heroImage: "/work2.png",
         about:
           "Digitize workflows, remove manual handoffs, and give your teams back the hours they currently spend on repetitive administration. We automate the processes that quietly consume your operating budget.",
         categories: ["Operations", "Automation", "Data", "Advisory"],
@@ -96,7 +96,7 @@ export const continents: Continent[] = [
             id: "dt3",
             title: "Where Automation Pays Back Fastest in African Enterprises",
             excerpt: "Finance approvals, onboarding, and reporting are usually the first wins.",
-            image: "/hero-desert.jpg",
+            image: "/work3.png",
             category: "Automation",
             date: "2026-04-14",
             author: "LOKA Engineering",
@@ -110,7 +110,7 @@ export const continents: Continent[] = [
             id: "dt4",
             title: "Digitizing Paper Workflows Without Disrupting Operations",
             excerpt: "A staged migration path that keeps the business running.",
-            image: "/morocco.jpg",
+            image: "/work4.png",
             category: "Operations",
             date: "2026-03-08",
             author: "LOKA Engineering",
@@ -125,7 +125,7 @@ export const continents: Continent[] = [
       {
         name: "Legacy Modernization",
         slug: "legacy-modernization",
-        heroImage: "/iceland.jpg",
+        heroImage: "/work3.png",
         about:
           "Aging systems hold organizations back with brittle integrations, security risk, and rising maintenance costs. We modernize them incrementally, protecting the business logic you depend on while removing the constraints you do not.",
         categories: ["Cloud", "Advisory", "Operations"],
@@ -136,7 +136,7 @@ export const continents: Continent[] = [
             id: "dt5",
             title: "Modernizing Legacy Systems Without a Risky Big-Bang Rewrite",
             excerpt: "Strangle the old system gradually and keep the lights on.",
-            image: "/iceland.jpg",
+            image: "/think1.png",
             category: "Cloud",
             date: "2026-02-20",
             author: "LOKA Engineering",
@@ -150,7 +150,7 @@ export const continents: Continent[] = [
             id: "dt6",
             title: "Cloud Migration: What to Move, What to Rebuild, What to Retire",
             excerpt: "A decision framework for migrating enterprise workloads.",
-            image: "/northern-lights.jpg",
+            image: "/think2.png",
             category: "Cloud",
             date: "2026-01-16",
             author: "LOKA Engineering",
@@ -167,14 +167,14 @@ export const continents: Continent[] = [
   {
     name: "AI Strategy",
     slug: "ai-strategy",
-    heroImage: "/northern-lights.jpg",
+    heroImage: "/hero2.png",
     introduction:
       "Turn artificial intelligence into measurable business value. We help organizations identify where AI creates real impact rather than following trends, then design, deploy, and govern the solutions that deliver it.",
     countries: [
       {
         name: "AI Readiness",
         slug: "ai-readiness",
-        heroImage: "/northern-lights.jpg",
+        heroImage: "/logistic1.png",
         about:
           "Before you invest in AI, you need an honest view of your data, processes, and skills. Our readiness assessment tells you where AI will work today, where it will not, and what it will take to close the gap.",
         categories: ["Strategy", "Data", "Advisory", "Governance"],
@@ -190,7 +190,7 @@ export const continents: Continent[] = [
             id: "ai1",
             title: "AI Readiness: The Five Questions to Answer Before You Spend a Naira",
             excerpt: "Data quality, process clarity, and governance decide whether AI works.",
-            image: "/northern-lights.jpg",
+            image: "/think1.png",
             category: "Strategy",
             date: "2026-07-01",
             author: "LOKA AI Practice",
@@ -204,7 +204,7 @@ export const continents: Continent[] = [
             id: "ai2",
             title: "Building an AI Roadmap That Survives Contact With Reality",
             excerpt: "Sequencing pilots, platforms, and governance in the right order.",
-            image: "/asia-temple.jpg",
+            image: "/think2.png",
             category: "Advisory",
             date: "2026-05-25",
             author: "LOKA AI Practice",
@@ -219,7 +219,7 @@ export const continents: Continent[] = [
       {
         name: "Generative AI",
         slug: "generative-ai",
-        heroImage: "/asia-temple.jpg",
+        heroImage: "/think1.png",
         about:
           "We build generative AI solutions grounded in your own knowledge — assistants, copilots, and document intelligence that answer from your policies, contracts, and operational data rather than guessing.",
         categories: ["Automation", "Data", "Operations"],
@@ -230,7 +230,7 @@ export const continents: Continent[] = [
             id: "ai3",
             title: "Grounded AI Assistants: Making Models Answer From Your Own Knowledge",
             excerpt: "Retrieval, citations, and guardrails turn a chatbot into a trusted tool.",
-            image: "/asia-temple.jpg",
+            image: "/think3.png",
             category: "Automation",
             date: "2026-06-05",
             author: "LOKA AI Practice",
@@ -244,7 +244,7 @@ export const continents: Continent[] = [
             id: "ai4",
             title: "Intelligent Document Processing for High-Volume Operations",
             excerpt: "Extracting structured data from invoices, claims, and forms at scale.",
-            image: "/travel-books.jpg",
+            image: "/logistic1.png",
             category: "Operations",
             date: "2026-04-28",
             author: "LOKA AI Practice",
@@ -259,7 +259,7 @@ export const continents: Continent[] = [
       {
         name: "AI Governance",
         slug: "ai-governance",
-        heroImage: "/hero-camping.jpg",
+        heroImage: "/think2.png",
         about:
           "Responsible AI is a business requirement, not a compliance afterthought. We put policies, monitoring, and review processes in place so your AI systems remain accurate, explainable, and defensible.",
         categories: ["Governance", "Advisory", "Data"],
@@ -270,7 +270,7 @@ export const continents: Continent[] = [
             id: "ai5",
             title: "Predictive Analytics: Turning Operational Data Into Decisions",
             excerpt: "Forecasting demand, risk, and churn with the data you already hold.",
-            image: "/hero-camping.jpg",
+            image: "/hero2.png",
             category: "Data",
             date: "2026-03-19",
             author: "LOKA AI Practice",
@@ -284,7 +284,7 @@ export const continents: Continent[] = [
             id: "ai6",
             title: "Governing AI: Policies, Guardrails, and Human Oversight",
             excerpt: "What a workable AI governance framework looks like in practice.",
-            image: "/france.jpg",
+            image: "/hero5.png",
             category: "Governance",
             date: "2026-02-06",
             author: "LOKA AI Practice",
@@ -301,14 +301,14 @@ export const continents: Continent[] = [
   {
     name: "Product Engineering",
     slug: "product-engineering",
-    heroImage: "/hero-greece.jpg",
+    heroImage: "/hero3.png",
     introduction:
       "From idea to launch. We design and build digital products that people love — discovery, design, engineering, infrastructure, and quality assurance under one accountable team.",
     countries: [
       {
         name: "Product Discovery",
         slug: "product-discovery",
-        heroImage: "/hero-greece.jpg",
+        heroImage: "/work4.png",
         about:
           "The cheapest version of your product is the one you validate before building. Discovery aligns the business case, the user need, and the technical approach before engineering budget is committed.",
         categories: ["Strategy", "Design", "Advisory"],
@@ -324,7 +324,7 @@ export const continents: Continent[] = [
             id: "pe1",
             title: "Product Discovery: How to Avoid Building the Wrong Thing Well",
             excerpt: "Two weeks of structured discovery saves months of engineering.",
-            image: "/hero-greece.jpg",
+            image: "/hero3.png",
             category: "Strategy",
             date: "2026-06-27",
             author: "LOKA Product Team",
@@ -338,7 +338,7 @@ export const continents: Continent[] = [
             id: "pe2",
             title: "Designing Products People Actually Enjoy Using",
             excerpt: "Simplicity is an engineering decision as much as a design one.",
-            image: "/bloggers.jpg",
+            image: "/work3.png",
             category: "Design",
             date: "2026-05-11",
             author: "LOKA Product Team",
@@ -353,7 +353,7 @@ export const continents: Continent[] = [
       {
         name: "Applications & Platforms",
         slug: "applications-platforms",
-        heroImage: "/france.jpg",
+        heroImage: "/think3.png",
         about:
           "We build mobile apps, web applications, SaaS products, and enterprise platforms engineered for scale, security, and long-term maintainability.",
         categories: ["Engineering", "Design", "Cloud"],
@@ -364,7 +364,7 @@ export const continents: Continent[] = [
             id: "pe3",
             title: "Building Mobile Products for Real African Network Conditions",
             excerpt: "Offline-first design, lean payloads, and graceful degradation.",
-            image: "/france.jpg",
+            image: "/work4.png",
             category: "Engineering",
             date: "2026-04-03",
             author: "LOKA Product Team",
@@ -378,7 +378,7 @@ export const continents: Continent[] = [
             id: "pe4",
             title: "API-First Architecture for Products That Need to Integrate",
             excerpt: "Designing platforms that other systems can build on.",
-            image: "/hero-camping.jpg",
+            image: "/think3.png",
             category: "Engineering",
             date: "2026-03-01",
             author: "LOKA Product Team",
@@ -393,7 +393,7 @@ export const continents: Continent[] = [
       {
         name: "DevOps & Quality",
         slug: "devops-quality",
-        heroImage: "/iceland.jpg",
+        heroImage: "/work3.png",
         about:
           "Reliable delivery is a capability, not a phase. We set up the pipelines, environments, monitoring, and test automation that let your teams ship confidently and frequently.",
         categories: ["Cloud", "Engineering", "Operations"],
@@ -404,7 +404,7 @@ export const continents: Continent[] = [
             id: "pe5",
             title: "CI/CD for Teams That Cannot Afford Downtime",
             excerpt: "Automated pipelines, staged environments, and safe rollbacks.",
-            image: "/iceland.jpg",
+            image: "/hero1.png",
             category: "Cloud",
             date: "2026-02-13",
             author: "LOKA Engineering",
@@ -418,7 +418,7 @@ export const continents: Continent[] = [
             id: "pe6",
             title: "Quality Assurance That Scales With the Product",
             excerpt: "Where to automate, where to test manually, and how to measure.",
-            image: "/world-map.jpg",
+            image: "/hero4.png",
             category: "Operations",
             date: "2026-01-09",
             author: "LOKA Engineering",
@@ -435,14 +435,14 @@ export const continents: Continent[] = [
   {
     name: "Enterprise Solutions",
     slug: "enterprise-solutions",
-    heroImage: "/travel-books.jpg",
+    heroImage: "/hero4.png",
     introduction:
       "Helping organizations run smarter. We develop scalable enterprise systems that manage people, money, learning, care, and operations — built for the way your organization actually works.",
     countries: [
       {
         name: "ERP & Finance",
         slug: "erp-finance",
-        heroImage: "/travel-books.jpg",
+        heroImage: "/logistic3.png",
         about:
           "Enterprise resource planning and financial systems that give leadership a single, trustworthy view of operations, spend, and performance.",
         categories: ["Operations", "Data", "Engineering"],
@@ -458,7 +458,7 @@ export const continents: Continent[] = [
             id: "es1",
             title: "Choosing Between Off-the-Shelf ERP and a Custom Platform",
             excerpt: "A clear framework for a decision most organizations get wrong.",
-            image: "/travel-books.jpg",
+            image: "/hero4.png",
             category: "Operations",
             date: "2026-06-11",
             author: "LOKA Enterprise Team",
@@ -472,7 +472,7 @@ export const continents: Continent[] = [
             id: "es2",
             title: "Financial Applications: Controls, Reconciliation, and Trust",
             excerpt: "What separates a reporting tool from a system of record.",
-            image: "/morocco.jpg",
+            image: "/payraty.png",
             category: "Data",
             date: "2026-05-16",
             author: "LOKA Enterprise Team",
@@ -487,7 +487,7 @@ export const continents: Continent[] = [
       {
         name: "People & Learning",
         slug: "people-learning",
-        heroImage: "/bloggers.jpg",
+        heroImage: "/esecondary.png",
         about:
           "Human resource, payroll, and learning platforms that reduce administrative load and give your organization a clear picture of its people and their capability.",
         categories: ["Operations", "Design", "Engineering"],
@@ -498,7 +498,7 @@ export const continents: Continent[] = [
             id: "es3",
             title: "Payroll Systems Built for Complex, Multi-Entity Organizations",
             excerpt: "Handling allowances, statutory deductions, and audit requirements.",
-            image: "/bloggers.jpg",
+            image: "/esecondary.png",
             category: "Operations",
             date: "2026-04-21",
             author: "LOKA Enterprise Team",
@@ -512,7 +512,7 @@ export const continents: Continent[] = [
             id: "es4",
             title: "Learning Platforms That People Finish",
             excerpt: "Completion rates are a design problem, not a content problem.",
-            image: "/asia-temple.jpg",
+            image: "/work1.png",
             category: "Design",
             date: "2026-03-26",
             author: "LOKA Enterprise Team",
@@ -527,7 +527,7 @@ export const continents: Continent[] = [
       {
         name: "Sector Platforms",
         slug: "sector-platforms",
-        heroImage: "/africa-lion.jpg",
+        heroImage: "/payraty.png",
         about:
           "Healthcare, logistics, education, and government platforms built around regulated workflows, sensitive data, and demanding availability requirements.",
         categories: ["Engineering", "Governance", "Operations"],
@@ -538,7 +538,7 @@ export const continents: Continent[] = [
             id: "es5",
             title: "Building Healthcare Platforms Around Clinical Workflows",
             excerpt: "Software that respects how care is actually delivered.",
-            image: "/africa-lion.jpg",
+            image: "/logistic3.png",
             category: "Engineering",
             date: "2026-02-27",
             author: "LOKA Enterprise Team",
@@ -552,7 +552,7 @@ export const continents: Continent[] = [
             id: "es6",
             title: "Delivering Government Technology Projects That Ship",
             excerpt: "Procurement realities, phased delivery, and public accountability.",
-            image: "/hero-desert.jpg",
+            image: "/work2.png",
             category: "Governance",
             date: "2026-01-23",
             author: "LOKA Enterprise Team",
@@ -569,14 +569,14 @@ export const continents: Continent[] = [
   {
     name: "Intelligent Automation",
     slug: "intelligent-automation",
-    heroImage: "/morocco.jpg",
+    heroImage: "/hero5.png",
     introduction:
       "Automate repetitive work so your people can focus on innovation. We combine robotic process automation, workflow engines, and AI to remove the manual steps that slow your operations down.",
     countries: [
       {
         name: "Robotic Process Automation",
         slug: "robotic-process-automation",
-        heroImage: "/morocco.jpg",
+        heroImage: "/work1.png",
         about:
           "Software robots that operate your existing systems the way a person would — ideal where integration is impossible and volumes are high.",
         categories: ["Automation", "Operations", "Data"],
@@ -592,7 +592,7 @@ export const continents: Continent[] = [
             id: "ia1",
             title: "When RPA Is the Right Answer — and When It Is a Trap",
             excerpt: "Bots are a bridge, not a permanent architecture.",
-            image: "/morocco.jpg",
+            image: "/hero5.png",
             category: "Automation",
             date: "2026-06-02",
             author: "LOKA Automation Team",
@@ -606,7 +606,7 @@ export const continents: Continent[] = [
             id: "ia2",
             title: "Customer Service Automation Without Frustrating Customers",
             excerpt: "Deflect the routine, escalate the rest, and always offer a human.",
-            image: "/hero-greece.jpg",
+            image: "/work4.png",
             category: "Operations",
             date: "2026-04-09",
             author: "LOKA Automation Team",
@@ -621,7 +621,7 @@ export const continents: Continent[] = [
       {
         name: "Workflow Automation",
         slug: "workflow-automation",
-        heroImage: "/hero-camping.jpg",
+        heroImage: "/work2.png",
         about:
           "Orchestrated, monitored workflows that move work between people and systems automatically — with clear ownership at every step.",
         categories: ["Automation", "Operations", "Engineering"],
@@ -632,7 +632,7 @@ export const continents: Continent[] = [
             id: "ia3",
             title: "AI-Powered Operations: Combining Rules, Models, and People",
             excerpt: "The most effective automation is rarely fully autonomous.",
-            image: "/hero-camping.jpg",
+            image: "/think2.png",
             category: "Automation",
             date: "2026-03-13",
             author: "LOKA Automation Team",
@@ -646,7 +646,7 @@ export const continents: Continent[] = [
             id: "ia4",
             title: "Process Analytics: You Cannot Automate What You Cannot See",
             excerpt: "Measuring cycle time and exception rates before you invest.",
-            image: "/northern-lights.jpg",
+            image: "/work2.png",
             category: "Data",
             date: "2026-01-30",
             author: "LOKA Automation Team",
@@ -663,14 +663,14 @@ export const continents: Continent[] = [
   {
     name: "Industries",
     slug: "industries",
-    heroImage: "/hero-desert.jpg",
+    heroImage: "/hero1.png",
     introduction:
       "Every industry is becoming a technology company. We help organizations across logistics, aviation, government, healthcare, education, finance, retail, manufacturing, agriculture, hospitality, and professional services build the digital capability their sector now demands.",
     countries: [
       {
         name: "Logistics & Mobility",
         slug: "logistics-mobility",
-        heroImage: "/hero-desert.jpg",
+        heroImage: "/logistic3.png",
         about:
           "Delivery, fleet, and mobility operators run on coordination. We build the tracking, dispatch, and optimization systems that make that coordination reliable at scale.",
         categories: ["Operations", "Engineering", "Data"],
@@ -686,7 +686,7 @@ export const continents: Continent[] = [
             id: "in1",
             title: "What Modern Logistics Operators Need From Their Technology",
             excerpt: "Visibility, dispatch intelligence, and rider economics.",
-            image: "/hero-desert.jpg",
+            image: "/logistic3.png",
             category: "Operations",
             date: "2026-05-29",
             author: "LOKA Industry Team",
@@ -700,7 +700,7 @@ export const continents: Continent[] = [
             id: "in2",
             title: "Aviation and Airport Operations: Digitizing the Ground Experience",
             excerpt: "Ground transport, passenger services, and vendor coordination.",
-            image: "/world-map.jpg",
+            image: "/work1.png",
             category: "Engineering",
             date: "2026-02-17",
             author: "LOKA Industry Team",
@@ -715,7 +715,7 @@ export const continents: Continent[] = [
       {
         name: "Public & Social Sector",
         slug: "public-social-sector",
-        heroImage: "/africa-lion.jpg",
+        heroImage: "/hero2.png",
         about:
           "Government agencies, healthcare providers, and educational institutions serve everyone — which makes accessibility, reliability, and accountability non-negotiable design constraints.",
         categories: ["Governance", "Design", "Operations"],
@@ -726,7 +726,7 @@ export const continents: Continent[] = [
             id: "in3",
             title: "Designing Public Services for Every Level of Digital Literacy",
             excerpt: "Accessibility is the difference between a service and a barrier.",
-            image: "/africa-lion.jpg",
+            image: "/hero2.png",
             category: "Design",
             date: "2026-04-17",
             author: "LOKA Industry Team",
@@ -740,7 +740,7 @@ export const continents: Continent[] = [
             id: "in4",
             title: "Education Technology That Works Outside the Capital City",
             excerpt: "Low bandwidth, shared devices, and intermittent power.",
-            image: "/asia-temple.jpg",
+            image: "/esecondary.png",
             category: "Operations",
             date: "2026-01-12",
             author: "LOKA Industry Team",
@@ -755,7 +755,7 @@ export const continents: Continent[] = [
       {
         name: "Commerce & Finance",
         slug: "commerce-finance",
-        heroImage: "/france.jpg",
+        heroImage: "/hero4.png",
         about:
           "Retailers, marketplaces, manufacturers, and financial institutions competing on speed, trust, and customer experience.",
         categories: ["Engineering", "Data", "Strategy"],
@@ -766,7 +766,7 @@ export const continents: Continent[] = [
             id: "in5",
             title: "Digital Payments and Trust in Emerging Markets",
             excerpt: "Reliability, reconciliation, and transparent failure handling.",
-            image: "/france.jpg",
+            image: "/payraty.png",
             category: "Engineering",
             date: "2026-03-05",
             author: "LOKA Industry Team",
@@ -780,7 +780,7 @@ export const continents: Continent[] = [
             id: "in6",
             title: "Retail and Marketplace Platforms Built to Scale",
             excerpt: "Catalogue, inventory, and multi-vendor operations done properly.",
-            image: "/travel-books.jpg",
+            image: "/logistic1.png",
             category: "Data",
             date: "2026-02-02",
             author: "LOKA Industry Team",
@@ -797,14 +797,14 @@ export const continents: Continent[] = [
   {
     name: "Who We Work With",
     slug: "who-we-work-with",
-    heroImage: "/bloggers.jpg",
+    heroImage: "/hero3.png",
     introduction:
       "LOKA partners with government agencies, startups, SMEs, enterprise organizations, NGOs, educational institutions, healthcare providers, and financial institutions across Africa. Different scale, same expectation: technology that produces measurable business results.",
     countries: [
       {
         name: "Startups & SMEs",
         slug: "startups-smes",
-        heroImage: "/bloggers.jpg",
+        heroImage: "/work4.png",
         about:
           "Founders and growing businesses need speed without the technical debt that makes the next stage expensive. We build lean, extendable foundations and stay involved as you scale.",
         categories: ["Strategy", "Design", "Engineering"],
@@ -820,7 +820,7 @@ export const continents: Continent[] = [
             id: "ww1",
             title: "Building an MVP That Does Not Become a Liability",
             excerpt: "Speed and maintainability are not opposites.",
-            image: "/bloggers.jpg",
+            image: "/work4.png",
             category: "Strategy",
             date: "2026-05-07",
             author: "LOKA Product Team",
@@ -835,7 +835,7 @@ export const continents: Continent[] = [
       {
         name: "Enterprise & Government",
         slug: "enterprise-government",
-        heroImage: "/world-map.jpg",
+        heroImage: "/hero5.png",
         about:
           "Large organizations need partners who understand procurement, governance, and stakeholder complexity as well as they understand engineering.",
         categories: ["Governance", "Advisory", "Operations"],
@@ -846,7 +846,7 @@ export const continents: Continent[] = [
             id: "ww2",
             title: "What Enterprises Should Expect From a Technology Partner",
             excerpt: "Accountability after launch is the real differentiator.",
-            image: "/world-map.jpg",
+            image: "/hero5.png",
             category: "Advisory",
             date: "2026-04-24",
             author: "LOKA Strategy Team",
@@ -867,7 +867,7 @@ export const featuredArticles: Article[] = [
     id: "f1",
     title: "AI Strategy in 2026: From Experiments to Operating Capability",
     excerpt: "How African organizations are moving beyond pilots to AI that runs in production.",
-    image: "/northern-lights.jpg",
+    image: "/think1.png",
     category: "AI Strategy",
     date: "2026-07-15",
     author: "LOKA AI Practice",
@@ -882,7 +882,7 @@ export const featuredArticles: Article[] = [
     id: "f2",
     title: "LOKA Logistics: Building an Intelligent Delivery Ecosystem",
     excerpt: "Inside the platform connecting merchants, riders, fleets, and customers in one system.",
-    image: "/hero-desert.jpg",
+    image: "/think2.png",
     category: "Products",
     date: "2026-06-30",
     author: "LOKA Product Team",
@@ -897,7 +897,7 @@ export const featuredArticles: Article[] = [
     id: "f3",
     title: "Legacy Modernization: The Quiet Cost of Doing Nothing",
     excerpt: "Aging systems rarely fail dramatically. They fail slowly, in maintenance budgets and lost speed.",
-    image: "/iceland.jpg",
+    image: "/think3.png",
     category: "Digital Transformation",
     date: "2026-06-12",
     author: "LOKA Engineering",

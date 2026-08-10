@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Sun, ArrowRight, Mountain, Waves, Flame, Camera, TreePine, Bird, Compass, Snowflake, UtensilsCrossed, Landmark, Palmtree, Shell } from "lucide-react";
+import { Layers, ArrowRight, BarChart2, Settings, Shield, Code2, Users, Database, Cpu, Globe, FileText, Briefcase, Compass } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import ArticleCard from "@/components/ArticleCard";
 import NewsletterSignup from "@/components/NewsletterSignup";
@@ -15,18 +15,17 @@ const countryFlags: Record<string, string> = {
 };
 
 const categoryIcons: Record<string, React.ElementType> = {
-  "Nature": Mountain,
-  "Adventure": Compass,
-  "Hot Springs": Waves,
-  "Wildlife": Bird,
-  "Northern Lights": Snowflake,
-  "Culture": Landmark,
-  "Food": UtensilsCrossed,
-  "Museums": Landmark,
-  "Attractions": Camera,
-  "Islands": Shell,
-  "History": Landmark,
-  "Beaches": Waves,
+  "Strategy": Briefcase,
+  "Advisory": Compass,
+  "Operations": Settings,
+  "Data": Database,
+  "Cloud": Globe,
+  "Automation": Cpu,
+  "Engineering": Code2,
+  "Design": Layers,
+  "Governance": Shield,
+  "AI": BarChart2,
+  "Security": Shield,
 };
 
 const ARTICLES_PER_PAGE = 6;
@@ -81,7 +80,7 @@ const CountryPage = () => {
 
         <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-primary-foreground/50 text-[10px] uppercase tracking-[0.4em] mb-3 font-medium">Welcome to</p>
+            <p className="text-primary-foreground/50 text-[10px] uppercase tracking-[0.4em] mb-3 font-medium">Service Area</p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold text-primary-foreground italic tracking-tight">
               {country.name}
             </h1>
@@ -139,7 +138,7 @@ const CountryPage = () => {
       {country.regions && country.regions.length > 0 && (
         <section className="max-w-4xl mx-auto px-4 md:px-8 pb-10">
           <p className="text-[11px] uppercase tracking-[0.25em] font-semibold text-foreground/70 mb-4">
-            Where do you want to go in {country.name}?
+            Specific services within {country.name}:
           </p>
           <div className="flex flex-wrap gap-2">
             {country.regions.map((region) => (
@@ -205,7 +204,7 @@ const CountryPage = () => {
             <div className="text-center mb-8">
               <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">How we work</p>
               <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground italic">
-                How do you say that in {country.phrases[0].language}?
+                Our principles for {country.name}
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
@@ -232,7 +231,7 @@ const CountryPage = () => {
             </svg>
           </div>
           <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground italic mb-4">
-            Where this fits in your journey: {country.name}?
+            Where this fits in your engagement: {country.name}
           </h2>
           <p className="text-sm text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             Every engagement moves through discover, design, build, deploy and optimize. The highlighted stages below are where this
@@ -273,7 +272,7 @@ const CountryPage = () => {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 border border-primary text-primary rounded-full px-6 py-2.5 text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-all"
         >
-          Schedule a consultation 🎵
+          Schedule a consultation
         </a>
       </section>
 

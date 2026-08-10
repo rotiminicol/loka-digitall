@@ -103,9 +103,12 @@ const NewsletterSignup = ({ variant = "inline", backgroundImage }: NewsletterSig
   return (
     <section className="bg-earth-cream border border-border rounded-lg p-8 md:p-12 text-center max-w-3xl mx-auto">
       <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-2 font-medium">Innovation starts with a conversation</p>
-      <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4 italic">
-        Book a strategy session
+      <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-2 italic">
+        Ready to Transform Your Business?
       </h3>
+      <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">
+        Whether you're building a new digital product, implementing AI, modernizing legacy infrastructure, or creating a technology roadmap, LOKA has the expertise to help.
+      </p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
         <input
           type="email"
@@ -119,7 +122,7 @@ const NewsletterSignup = ({ variant = "inline", backgroundImage }: NewsletterSig
           type="submit"
           className="bg-primary text-primary-foreground px-8 py-3 rounded-md font-semibold text-sm hover:opacity-90 transition inline-flex items-center justify-center gap-2"
         >
-          Sign Up <ArrowRight className="w-3.5 h-3.5" />
+          Schedule a Consultation <ArrowRight className="w-3.5 h-3.5" />
         </button>
       </form>
     </section>

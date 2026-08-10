@@ -69,10 +69,10 @@ const Destinations = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-sm text-muted-foreground leading-relaxed"
         >
-          Technology is no longer just a support function — it is the engine of growth.
-          This way you can plan your next trip in no time. Do you already know what your next vacation destination will be?
-          Or are you still looking for inspiration? Below you'll find tips for destinations in Asia, Africa, Central America,
-          South America, Oceania and North America. Enjoy!
+          Technology is no longer just a support function — it is the engine of growth. At LOKA, we help businesses,
+          governments, startups, and enterprises transform how they operate through Artificial Intelligence, intelligent
+          automation, cloud technologies, and custom software engineering. We don't simply build software — we solve
+          business problems using technology.
         </motion.p>
       </section>
 

@@ -22,7 +22,7 @@ export const travelRoutes: TravelRoute[] = [
     description:
       "Our end-to-end transformation engagement. We start with your business model and operating reality, define a funded roadmap, then deliver it in 90-day increments that each produce a measurable outcome.",
     duration: "6 – 12 months",
-    image: "/world-map.jpg",
+    image: "/work1.png",
     countries: ["Strategy", "Process Automation", "Cloud Migration", "Change Enablement"],
     difficulty: "Challenging",
     bestSeason: "Enterprise & Government",
@@ -57,7 +57,7 @@ export const travelRoutes: TravelRoute[] = [
     description:
       "A structured path for organizations that want AI to produce measurable value rather than demos. We assess readiness, prove impact on a narrow use case, then build the platform and governance that make the next use cases faster.",
     duration: "3 – 6 months",
-    image: "/northern-lights.jpg",
+    image: "/work2.png",
     countries: ["AI Readiness", "Generative AI", "Predictive Analytics", "AI Governance"],
     difficulty: "Moderate",
     bestSeason: "All sectors",
@@ -92,7 +92,7 @@ export const travelRoutes: TravelRoute[] = [
     description:
       "For organizations launching a new digital product. Discovery validates the opportunity, design proves the experience, and engineering delivers a production-ready platform built to scale beyond version one.",
     duration: "8 – 20 weeks",
-    image: "/hero-greece.jpg",
+    image: "/work3.png",
     countries: ["Product Discovery", "UI/UX Design", "Mobile & Web", "DevOps"],
     difficulty: "Moderate",
     bestSeason: "Startups, SMEs & Enterprises",
@@ -127,7 +127,7 @@ export const travelRoutes: TravelRoute[] = [
     description:
       "We measure your processes, identify the automation candidates with the strongest return, then deliver automation combining workflow engines, RPA, and AI — with monitoring so nothing fails silently.",
     duration: "3 – 9 months",
-    image: "/morocco.jpg",
+    image: "/work4.png",
     countries: ["Process Analytics", "RPA", "Workflow Automation", "Document Automation"],
     difficulty: "Easy",
     bestSeason: "Operations-heavy organizations",

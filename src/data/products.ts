@@ -9,6 +9,7 @@ export interface Product {
   pages: number;
   format: string;
   contents: string[];
+  url?: string;
 }
 
 export const products: Product[] = [
@@ -17,7 +18,7 @@ export const products: Product[] = [
     name: "LOKA Logistics",
     price: 1500,
     rating: 4.9,
-    image: "/hero-desert.jpg",
+    image: "/logistic3.png",
     description:
       "Smart mobility, smarter commerce. LOKA Logistics is our intelligent logistics and delivery ecosystem built to power modern commerce — connecting customers, merchants, dispatch riders, and fleet operators through one integrated digital platform. Designed for businesses, marketplaces, logistics providers, airports, estates, and cities.",
     features: [
@@ -30,6 +31,7 @@ export const products: Product[] = [
     ],
     pages: 14,
     format: "Cloud platform + mobile apps",
+    url: "https://loka.africa",
     contents: [
       "Multi-vendor Marketplace — onboard merchants, manage catalogues and inventory, and settle vendors automatically with full dispute handling.",
       "Last-mile Delivery & Dispatch Management — intelligent assignment of orders to the right rider based on location, capacity, and service level.",
@@ -46,7 +48,7 @@ export const products: Product[] = [
     name: "Payraty",
     price: 900,
     rating: 4.8,
-    image: "/travel-books.jpg",
+    image: "/payraty.png",
     description:
       "A digital payments and financial operations product from the LOKA portfolio. Payraty handles collections, disbursements, reconciliation, and reporting for businesses that need payment flows to be reliable, transparent, and auditable.",
     features: [
@@ -59,6 +61,7 @@ export const products: Product[] = [
     ],
     pages: 8,
     format: "Cloud platform + API",
+    url: "https://payraty.com/",
     contents: [
       "Collections — accept payments across channels with clear, real-time status communicated to both your team and your customer.",
       "Disbursements — bulk and scheduled payouts with maker-checker approval limits and complete audit trails.",
@@ -73,7 +76,7 @@ export const products: Product[] = [
     name: "eSecondarySchool",
     price: 750,
     rating: 4.7,
-    image: "/asia-temple.jpg",
+    image: "/esecondary.png",
     description:
       "A learning and school management platform built for the realities of education outside major cities — shared devices, low bandwidth, and intermittent power. Combines learning delivery with the administration schools actually run on.",
     features: [
@@ -86,6 +89,7 @@ export const products: Product[] = [
     ],
     pages: 10,
     format: "Web platform + mobile apps",
+    url: "https://esecondaryschool.com/",
     contents: [
       "Learning Delivery — structured courses and lessons that download for offline study and synchronize progress when connectivity returns.",
       "Assessment & Grading — continuous assessment, examinations, automated scoring where appropriate, and results publication.",
@@ -100,7 +104,7 @@ export const products: Product[] = [
     name: "LOKA AI Platform",
     price: 1200,
     rating: 4.9,
-    image: "/northern-lights.jpg",
+    image: "/logistic1.png",
     description:
       "The foundation we deploy for organizations running AI in production. Grounded assistants, document intelligence, and predictive workflows on top of a governed platform with retrieval, evaluation, monitoring, and audit built in.",
     features: [
@@ -113,6 +117,7 @@ export const products: Product[] = [
     ],
     pages: 9,
     format: "Cloud platform + integrations",
+    url: "https://loka.africa",
     contents: [
       "Knowledge Grounding — your policies, contracts, and operational data indexed into a retrieval layer so answers are traceable to a source document.",
       "AI Assistants — internal and customer-facing assistants with configurable guardrails and a clear escalation path to a human.",
